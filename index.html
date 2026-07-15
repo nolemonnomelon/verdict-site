@@ -115,20 +115,15 @@
     font-weight: 600;
   }
   .photo {
-    height: 210px; border-radius: 18px; position: relative;
-    background:
-      radial-gradient(120px 90px at 70% 18%, rgba(200,255,46,0.16), transparent 70%),
-      linear-gradient(160deg, #23242e 0%, #191a22 55%, #101117 100%);
+    height: 300px; border-radius: 18px; position: relative;
+    background: url(fit.jpg) center 28% / cover no-repeat, #191a22;
     border: 1px solid var(--hairline);
     overflow: hidden;
   }
   .photo::after {
     content: "";
-    position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%);
-    width: 120px; height: 150px;
-    background: #0d0e13;
-    clip-path: polygon(38% 0, 62% 0, 68% 9%, 82% 15%, 88% 42%, 80% 44%, 78% 30%, 76% 100%, 24% 100%, 22% 30%, 20% 44%, 12% 42%, 18% 15%, 32% 9%);
-    opacity: 0.9;
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(11,11,16,0.25) 0%, transparent 30%, transparent 70%, rgba(11,11,16,0.35) 100%);
   }
   .occasion-chip {
     position: absolute; top: 10px; left: 10px; z-index: 2;
